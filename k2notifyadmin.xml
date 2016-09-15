@@ -1,0 +1,130 @@
+<?xml version="1.0" encoding="utf-8"?>
+<extension version="2.5" type="plugin" group="k2" method="upgrade">
+    <name>K2 Notify Plugin</name>
+    <author>Joomkit</author>
+    <creationDate>April 21st, 2012</creationDate>
+    <copyright>Copyright (c) 2006 - 2012 Joomkit Ltd. All rights reserved.</copyright>
+    <authorEmail>info@joomkit.com</authorEmail>
+    <authorUrl>www.joomkit.com</authorUrl>
+    <version>1.4</version>
+    <license>http://www.gnu.org/licenses/gpl-2.0.html GNU/GPL</license>
+    <description>JK_K2NOTIFY_DESC</description>
+    <files>
+        <filename plugin="k2notifyadmin">k2notifyadmin.php</filename>
+         <folder>images</folder>
+          <folder>language</folder>
+    </files>
+	<languages folder="language/en-GB">
+    <language tag="en-GB">en-GB.plg_k2_k2notifyadmin.ini</language>
+    <language tag="en-GB">en-GB.plg_k2_k2notifyadmin.sys.ini</language>
+  </languages>	
+	<!-- Standard plugin parameters for Joomla! 1.5 -->
+    <params>
+        <param name="" type="header" default="Item Submission Notifications" label="" description=""/>
+
+                <param name="notifyGlobal" type="radio" default="0" label="Send on all submissions" description="Use this if you want any submission to any category to send emails on every submission to the list specified below.Or you can edit each category in K2 and set sending and email addresses there">
+                    <option value="0">No</option>
+                    <option value="1">Yes</option>
+                </param>
+                <param name="notifyglobalEdit" type="radio" default="0" label="Send on Edit" description="Will also send an email when an item is edited">
+                    <option value="0">No</option>
+                    <option value="1">Yes</option>
+                </param>                
+                <param name="notifyglobalEmailList" type="textarea" default="" label="Email Address(s) to send to" description="Use comma seperated to send to many" />
+                <param name="notifyglobalEmailSubject" type="text" default="New Submission " label="Global Email Subject Line" description="" />
+                <param name="notifyglobalEmailFromName" type="text" default="" label="Email From name" description="Sets From Name in email that the Submission is from - if not set will use Global Config from Joomla" />
+                <param name="notifyglobalIncludeK2ItemInBody" type="radio" default="1" label="Include K2 item" description="Yes will include K2 item body in email message">
+                    <option value="0">No</option>
+                    <option value="1">Yes</option>
+                </param>
+                <param name="" type="header" default="Comment Notifications" label="" description=""/>
+                
+            
+             
+                <param name="notifyglobalComm" type="radio" default="0" label="Turn On Global Comment notification" description="Will send an email to list specified below. MOre than one will be CC'd. BCC is just too problematic ;)">
+                    <option value="0">No</option>
+                    <option value="1">Yes</option>
+                </param>
+                <param name="notifyglobalCommEmailList" type="textarea" default="" label="Email Address(s) to send to" description="Use comma seperated to send to many" />
+
+                <param name="notifyglobalCommEmailSubject" type="text" default="New Comment" label="Global Comment Subject Line" description="Subject message" />
+                <param name="notifyglobalCommEmailFromName" type="text" default="" label="Email From name" description="Sets From Name in email that the Comment notification is from - if not set will use Global Config from Joomla" />
+                      <param name="notifyglobalIncludeK2ExFields" type="radio" default="1" label="Include K2 item" description="Yes will include K2 item body in email message">
+                    <option value="0">No</option>
+                    <option value="1">Yes</option>
+                </param>                 
+    </params>
+	
+
+	<!-- Standard plugin parameters for Joomla! 1.6+ -->
+    <config>
+        <fields name="params">
+        
+            <fieldset name="basic" addfieldpath="/administrator/components/com_k2/elements/">
+                <field name="" type="header" default="Item Submission Notifications" label="" description=""/>
+
+                <field name="notifyGlobal" type="radio" default="0" label="Send on all submissions" description="Use this if you want any submission to any category to send emails on every submission to the list specified below.Or you can edit each category in K2 and set sending and email addresses there">
+                    <option value="0">No</option>
+                    <option value="1">Yes</option>
+                </field>
+                <field name="notifyglobalEdit" type="radio" default="0" label="Send on Edit" description="Will also send an email when an item is edited">
+                    <option value="0">No</option>
+                    <option value="1">Yes</option>
+                </field>                
+                <field name="notifyglobalEmailList" type="textarea" default="" label="Email Address(s) to send to" description="Use comma seperated to send to many" />
+                <field name="notifyglobalEmailSubject" type="text" default="New Submission " label="Global Email Subject Line" description="" />
+                <field name="notifyglobalEmailFromName" type="text" default="" label="Email From name" description="Sets From Name in email that the Submission is from - if not set will use Global Config from Joomla" />
+                <field name="notifyglobalIncludeK2ItemInBody" type="radio" default="1" label="Include K2 item" description="Yes will include K2 item body in email message">
+                    <option value="0">No</option>
+                    <option value="1">Yes</option>
+                </field>
+                <field name="" type="header" default="Comment Notifications" label="" description=""/>
+             
+                <field name="notifyglobalComm" type="radio" default="0" label="Turn On Global Comment notification" description="Will send an email to list specified below. MOre than one will be CC'd. BCC is just too problematic ;)">
+                    <option value="0">No</option>
+                    <option value="1">Yes</option>
+                </field>
+                <field name="notifyglobalCommEmailList" type="textarea" default="" label="Email Address(s) to send to" description="Use comma seperated to send to many" />
+
+                <field name="notifyglobalCommEmailSubject" type="text" default="New Comment" label="Comment Subject Line" description="This will be used as the subject line of your comment notification  message" />
+                <field name="notifyglobalCommEmailFromName" type="text" default="" label="Email From name" description="Sets From Name in email that the Comment notification is from - if not set will use Global Config from Joomla" />
+                                  
+            </fieldset>
+                           
+            <fieldset name="advanced">
+                <field name="notifyglobalIncludeK2ExFields" type="radio" default="1" label="Include K2 item" description="Yes will include K2 item body in email message">
+                    <option value="0">No</option>
+                    <option value="1">Yes</option>
+                </field> 
+            </fieldset>
+        </fields>
+    </config>
+	
+	<!-- K2 plugin parameters which extend K2 backend forms are defined here. We use the same syntax as Joomla! 1.5 only, yet they are compatible with Joomla! 1.7 as well. These parameters are parsed by K2 only and we decided to just make things easier for developers, instead of opting for double parameters in 'params' and 'fields' blocks. -->
+<fields group="category" addfieldpath="/administrator/components/com_k2/elements/">        
+<field name="" type="header" default="Category Item Submission Notifications" label="" description=""/>
+
+<field name="cat_EmailSendStatus" type="list" default="0" label="Enable Submission Notifications" description="Notify Admin via email of submissions to this category">
+            <option value="0">Off</option>
+            <option value="1">On</option>
+        </field>
+<field name="cat_EmailSendEdit" type="list" default="0" label="Send on edits" description="Notify Admin via email of edits to items in this category">
+            <option value="0">No</option>
+            <option value="1">Yes</option>
+        </field>        
+        <field name="cat_NotifyEmailList" type="textarea" size="80" default="" label="Email Address(s) to send to" description="Use comma seperated to send to many" />
+
+   
+	<field name="" type="header" default="Comment Notifications" label="" description=""/>
+
+
+        <field name="cat_EmailCommSendStatus" type="list" default="0" label="Enable Comment notifications" description="Notify Admin via email of comments made to this category">
+            <option value="0">Off</option>
+            <option value="1">On</option>
+        </field>
+        <field name="cat_NotifyEmailCommList" type="textarea" size="80" default="" label="Email Address(s) to send to" description="Use comma seperated to send to many" />
+
+    </fields>	
+    
+
+</extension>
