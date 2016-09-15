@@ -15,4 +15,12 @@ K2 Notify Plugin adds some simple and effective email notifications to the K2 ex
 
 It adds a configuration screen to K2 categories [admin view]  which enables you to specify who should receive an email when a submmission is made on a per K2 category basis. You can also override these settings in the main notify plugin to set site wide global options. 
 
+NB This was previously a commerical plugin but its here minus support as a few people have asked to ourchase but I can't support it fully at the moment. It may revert to commerical status in the future.
+
+#Installation
+You need to download and zip the files into package and treat like a normal plugin for installtion
+
+
+
+
 
