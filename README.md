@@ -1,4 +1,6 @@
-# joomlaK2notify
+# K2Notify
+![picture alt](https://getk2.org/media/k2/items/cache/ddc8a0dc5f8a941393fccd12b09a2db0_XS.jpg "logo")
+
 Plugin for joomla K2 CCK
 Currently only tested with Joomla 2.5 and and K2 v 2.6.9
 This not a global content subscription solution!
