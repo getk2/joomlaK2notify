@@ -2,10 +2,10 @@
 
 ### IMPORTANT: The plugin is NOT CURRENTLY working with K2 v.2.9.0 or newer. Please expect an update by late Sep/early Oct 2019.
 
-===
+---
 
 # K2 Notify
-![picture alt](https://getk2.org/media/k2/items/cache/ddc8a0dc5f8a941393fccd12b09a2db0_XS.jpg "logo")
+![K2 Notify](https://getk2.org/media/k2/items/cache/ddc8a0dc5f8a941393fccd12b09a2db0_XS.jpg)
 
 **K2 Notify** is a Joomla plugin that adds some simple and effective email notifications for K2.
 
