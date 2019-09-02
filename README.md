@@ -4,8 +4,9 @@
 
 ---
 
-# K2 Notify
 ![K2 Notify](https://getk2.org/media/k2/items/cache/ddc8a0dc5f8a941393fccd12b09a2db0_XS.jpg)
+
+# K2 Notify
 
 **K2 Notify** is a Joomla plugin that adds some simple and effective email notifications for K2.
 
